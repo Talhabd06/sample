@@ -1,0 +1,131 @@
+/* header */
+html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+#menu{
+  position: fixed;
+  right: 30px;
+  top: 10px;
+  font-size: 40px;
+  color: #000;
+  background: #f0994d;
+  cursor: pointer;
+  z-index: 3;
+}
+#navmenu{
+  position: fixed;
+  padding: 100px 0px;
+  width: 0px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow:inset 10px 10px 10px grey;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+}
+
+#navmenu ul li {
+  list-style: none;
+  
+}
+#navmenu ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 10px 0px;
+  display: block;
+  padding: 10px;
+}
+#navmenu ul li a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transition:0.4s;
+  border-radius: 25px;
+}
+/*header end */
+#nav{
+  background: #f0994d;
+  height: 100vh;
+  width: 100%;
+}
+#close {
+  position: fixed;
+  right: 30px;
+  top: 15px;
+  font-size: 40px;
+  color: #000;
+  cursor: pointer;
+  z-index: 3;
+  display: none;
+  transition: 6s;
+}
+
+/* Sub Start */
+#navmenu ul .sub-1{
+position: relative;
+}
+#navmenu ul .sub-1:hover > ul{
+  display: initial;
+}
+#navmenu ul ul{
+display: none;
+width: 100px;
+right: 210px;
+top: 10px;
+position: absolute;
+margin: 0;
+padding: 0;
+border-radius: 25px;
+background: rgba(000, 000, 000, 0.5);
+backdrop-filter: blur(5px);
+box-shadow:inset 0px 0px 10px grey;
+z-index: 3;
+}
+#navmenu ul ul li a{
+  font-size: 15px;
+}
+#navmenu ul ul ul {
+  display: none;
+  width: 100px;
+  left: 100px;
+  top: 135px;
+  margin: 0;
+  padding: 0;
+}
+#navmenu ul ul ul ul {
+  display: none;
+  width: 100px;
+  left: 100px;
+  top: 160px;
+  margin: 0;
+  padding: 0;
+}
+#navmenu ul .sub-2:hover > ul {
+  display: initial;
+}
+#navmenu ul .sub-3:hover ul {
+  display: initial;
+}
+@media (max-width:700px){
+  #navmenu ul ul ul {
+    display: none;
+    width: 100px;
+    left: 105px;
+    top: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  #navmenu ul ul ul ul {
+    display: none;
+    width: 100px;
+    left: 102px;
+    top: 53px;
+    margin: 0;
+    padding: 0;
+  }
+}
+/* Sub end */
